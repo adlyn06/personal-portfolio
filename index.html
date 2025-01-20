@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+       <a href="#" class="logo">Portfolio</a>
+       <ul class="no-dots">
+          <li class="active"><a href="#">About</a></li>
+          <li><a class="nav-link" data-target=".skill-section">Skills</a></li>
+          <li><a class="nav-link" data-target=".projects">Projects</a></li>
+          <li><a class="nav-link" data-target=".contact">Contact</a></li>
+       </ul>
+    </nav>
+
+    <section class="home">
+        <div class="home-info">
+            <h1>ADLYN A</h1>  
+            <h2>I'm a
+                 <span style="--i:1;" data-text="Frontend Developer">Frontend Developer</span>
+            </h2>
+             <p>
+             Hello! I'm a passionate Frontend Developer currently exploring the exciting world of full-stack development with the MERN stack. As a 2nd-year Computer Science and Engineering (CSE) student specializing in Artificial Intelligence and Machine Learning (AIML), I enjoy crafting interactive and responsive web applications.
+             I’m also sharpening my problem-solving skills by learning Data Structures and Algorithms (DSA) using Java, which helps me build efficient and scalable solutions. My journey is fueled by curiosity and a drive to grow as a developer.
+               When I’m not coding, you’ll find me exploring new technologies, brainstorming creative designs, or working on projects that push my boundaries. I’m excited to bring my technical knowledge and creative flair to impactful projects.
+               Feel free to connect with me—let’s build something amazing together!
+            </p>
+          <div class="btn-sci">
+             <a href="https://docs.google.com/document/d/1UTI7eSDCR0PpVncAT1jhY10jvMHJA-sS2YocuqfdcI0/edit?usp=sharing" class="btn">Download CV</a>
+             
+             <div class="sci">
+                <a href="https://github.com/adlyn06/"><i class='bx bxl-github'></i></a>
+                <a href="linkedin.com/in/adlyn06"><i class='bx bxl-linkedin' ></i></a>
+                
+             </div>
+          
+          </div>
+        
+        </div>
+    </section>
+
+  <h1 class="skills">Skills</h1>
+
+<div class="skill-section">
+   <img src="OIP (6).jpg" width="200" height="150">
+   <img src="OIP (7).jpg" width="200" height="150">
+   <img src="OIP(8).jpg" width="200" height="150">
+   <img src="OIP.jpg" width="200" height="150" class="img1">
+   <img src="OIP (1).jpg" width="200" height="150" class="img2">
+   <img src="OIP (2).jpg" width="200" height="150" class="img3">
+</div>
+
+<h1 class="project-heading">Projects</h1>
+
+    <div class="projects">
+           <div class="project1">
+              <img src="Screenshot 2024-08-06 212754.png" width="360px" height="200px">
+              <button><a href="https://adlyn06.github.io/calculator-project/">View Project</a></button>
+              <p>Simple Calculator: A straightforward calculator application built using HTML, CSS, and JavaScript. This app allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The interface features clickable buttons for each digit and operation, providing a clean and user-friendly design. </p>
+           </div>
+
+           <div class="project2">
+            <img src="Screenshot 2025-01-19 160018.png" width="360px" height="200px">
+            <button><a href="https://adlyn06.github.io/weather-app/">View Project</a></button>
+            <p>Weather App with React.js: A modern weather forecasting application built using React.js that allows users to view real-time weather data. The app fetches weather information from an API and displays essential details such as temperature, humidity, weather conditions, and more, based on the user's location or selected city.</p>
+           </div>
+
+           <div class="project3">
+            <img src="Screenshot 2025-01-20 161255.png" width="380px" height="200px">
+            <button><a href="https://github.com/adlyn06/quiz-app.git">View Project</a></button>
+            <p>Interactive Quiz App: A web-based quiz application built using HTML, CSS, and JavaScript. Users can answer questions, and the app provides instant feedback by changing the background color—green for correct answers and red for incorrect ones. This project focuses on interactivity and simple yet effective user engagement.</p>
+           </div>
+    </div>
+ 
+   
+
+    <div class="contact">
+         <h2>Feel free to contact me at</h2>
+         <h3><span>Email: </span>adlynjohanna@gmail.com</h3>
+
+    </div>
+
+    <script>
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetSection = document.querySelector(this.dataset.target);
+          targetSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+    
+</body>
+</html>
